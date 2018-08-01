@@ -1,0 +1,88 @@
+import math
+
+
+#BASIC MATHEMATICAL CALCULATIONS 
+print("5 + 2= " + str(5 + 2))
+print("5 - 2= " + str(5 - 2))
+print("5 * 2= " + str(5 * 2))
+print("5 / 2= " + str(5 / 2))
+print("5 % 2= " + str(5 % 2))
+
+num1 = 20
+num2 = 10
+
+print("Addition: "+ str(num1 + num2))
+print("Subtraction: " + str(num1 - num2))
+print("Multification: " + str(num1 * num2))
+print("Division: " + str(num1 / num2))
+print("Remainder: " + str(num1 % num2))
+
+#PRINT USER INPUT
+
+'''
+  name=input("What is your Name: ")
+  print("Hello "+name)
+'''
+
+# Functions for Mathema
+
+def addition(num1, num2):
+    return num1 + num2
+  
+#Subtraction Function
+
+def subtraction(num1, num2):
+    return num1 - num2
+
+#Multification Function
+
+def multification(num1, num2):
+    return num1 * num2
+  
+#Division Function
+
+def division(num1, num2):
+    return num1 / num2
+
+#Remainder Function
+
+def remainder(num1, num2):
+    return num1 % num2
+  
+print("\n")
+  
+print("ADDITION FUCNTION: "+str(addition(5, 2)))
+print("SUBTRACTION FUNCTION: "+str(subtraction(5, 2)))
+print("MULTIFICATION: "+str(multification(5, 2)))
+print("DIVISION: "+str(division(5,2)))
+print("REMAINDER: "+str(remainder(5,2)))
+
+print("\n")
+
+#Conditional Statements
+
+city="London"
+
+if city == "Manchester":
+   print("Hello World from Manchester")
+elif city == "London":
+   print("Hello World from London")
+elif city == "Manchester":
+   print("Hello World from Manchester")
+else:
+   print("Hello World from UK")
+    
+#LOOP Conditional Statements
+
+#WHILE LOOP
+num1 = 1
+
+while(num1 <= 10):
+     print(num1)
+     num1+=1
+print("End of While Loop!")
+
+#FOR LOOP
+for num2 in range(1,11):
+    print(num2)
+print("End of For Loop!")

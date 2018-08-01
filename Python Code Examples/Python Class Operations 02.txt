@@ -1,0 +1,48 @@
+#CLASS OPERATIONS
+
+class Calculator:
+     def __init__(self, num1=10, num2=5):
+        self.num1=num1
+        self.num2=num2
+    
+     def addition(self):
+        result = self.num1 + self.num2
+        return result
+      
+     def subtraction(self):
+        result = self.num1 - self.num2
+        return result
+      
+     def multification(self):
+        result = self.num1 * self.num2
+        return result;
+      
+     def division(self):
+        result = self.num1 / self.num2
+        return result
+      
+     def remainder(self):
+        result = self.num1 % self.num2
+        return result
+      
+     def cubicValue(self):
+        num1Cubic = self.num1 * self.num1 * self.num1
+        num2Cubic = self.num2 * self.num2 * self.num2
+        result = "\nNum1 Cubic Value: " + str(num1Cubic) + "\nNum2 Cubic Value: "+str(num2Cubic)
+        return result
+      
+     def squareValue(self):
+        num1Square=self.num1 * self.num1
+        num2Square=self.num2 * self.num2
+        result = "\nNum1 Square Value: " + str(num1Square) + "\nNum2 Square Value: "+str(num2Square)
+        return result
+      
+calculatorObj=Calculator()
+
+print("ADDITION RESULT: "+str(calculatorObj.addition()))
+print("SUBTRACTION RESULT: "+str(calculatorObj.subtraction()))
+print("MULTIFICATION RESULT: "+str(calculatorObj.multification()))
+print("DIVISION RESULT: "+str(calculatorObj.division()))
+print("REMAINDER RESULT: "+str(calculatorObj.remainder()))
+print("CUBIC RESULT: "+str(calculatorObj.cubicValue()))
+print("SQUARE RESULT: "+str(calculatorObj.squareValue()))

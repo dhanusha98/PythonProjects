@@ -1,0 +1,30 @@
+#DATA STRUCTURES
+
+#LISTS
+
+list = [10,20,30,40,50]
+
+for index in range(len(list)):
+    print("Element at Index "+ str(index) + " : "+ str(list[index]))
+
+
+#TUPLE 
+
+tuple=("Dhanusha", "Gagana", "Shashini", "Madara", "Isuri")
+
+for index in range(len(tuple)):
+    print("Element at Index "+ str(index) + " : "+ str(tuple[index]))
+
+#DICTIONARY 
+
+dict1={
+     0:"Python",
+     1:"Java",
+     2:"C#",
+     3:"C++"
+}
+
+for index in range(len(dict1)):
+    print("Element at Index "+ str(index) + " : "+ str(dict1[index]))
+    
+    

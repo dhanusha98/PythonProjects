@@ -1,0 +1,22 @@
+#CLASS OPERATIONS
+
+class Student:
+     def __init__(self, ID, Name, Age, Course, GPA):
+         self.ID=ID
+         self.Name=Name
+         self.Age=Age
+         self.Course=Course
+         self.GPA=GPA
+        
+     def displayInfo(self):
+        print("========== STUDENT DETAILS ==========")
+        print("\n")
+        print("Student ID: "+str(self.ID))
+        print("Name: "+str(self.Name))
+        print("Age: "+str(self.Age))
+        print("Course: "+str(self.Course))
+        print("GPA: "+str(self.GPA))    
+    
+student1 = Student(1, "Dhanusha", 19, "BSc Hons in Software Engineering", 3.0)
+
+student1.displayInfo()
