@@ -1,0 +1,43 @@
+class Person:
+     def __init__(self):
+        self.__firstname="John"
+        self.__lastname="Lloyd"
+        self.__age=18
+        
+     def setFirstName(self,firstname):
+         self.__firstname=firstname
+        
+     def getFirstName(self):
+        return self.__firstname
+      
+     def setLastName(self, lastname):
+        self.__lastname=lastname
+        
+     def getLastName(self):
+        return self.__lastname
+        
+     def setAge(self, age):
+        self.__age=age
+        
+     def getAge(self):
+        return self.__age
+      
+person1 = Person()
+
+person1.setFirstName("Dhanusha")
+person1.setLastName("Siriwardane")
+person1.setAge(19)
+
+print(person1.getFirstName())
+print(person1.getLastName())
+print(person1.getAge())
+
+person2= Person()
+
+person2.setFirstName("Madara")
+person2.setLastName("Dias")
+person2.setAge(27)
+
+print(person2.getFirstName())
+print(person2.getLastName())
+print(person2.getAge())

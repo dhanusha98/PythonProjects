@@ -1,0 +1,29 @@
+#POLYMORPHISM
+
+class dog:
+     def fly(self):
+        print("Dog Can't fly")
+     def run(self):
+        print("Dog Can Run !")
+         
+         
+class bird:
+     def fly(self):
+        print("Bird Can't fly")
+     def run(self):
+        print("Bird Can't Run !")
+        
+def flyingTest(Animal):
+   Animal.fly()
+    
+def runningTest(Animal):
+   Animal.run()
+    
+dog1 = dog()
+bird = bird()
+
+flyingTest(dog1)
+runningTest(dog1)
+
+flyingTest(bird)
+runningTest(bird)

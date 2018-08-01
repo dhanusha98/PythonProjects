@@ -1,0 +1,38 @@
+#INHERITANCE
+
+class Person:
+     def __init__(self):
+         print("Person Capabilities")
+        
+     def sing(self):
+         print("Person Can Sing !")
+     def run(self):
+         print("Person can Run !")
+  
+class Chef(Person):
+     def __init__(self):
+        super().__init__()
+        print("Chef Capabilities")
+        
+     def cookFriedRice(self):
+        print("Chef can cook Rice !")
+        
+     def cookBiriyani(self):
+        print("Chef can cook Biriyani !")
+        
+class Pilot(Person):
+     def __init__(self):
+        super().__init__()
+        print("Pilot Capabilities")
+        
+     def airCraft(self):
+         print("Pilot can drive Air Crafts")
+        
+     def airCraftFeatures(self):
+         print("Capable to operate Aircraft Features effectively")
+    
+    
+pilot1 = Pilot()
+pilot1.airCraft()
+pilot1.airCraftFeatures()
+pilot1.sing()
