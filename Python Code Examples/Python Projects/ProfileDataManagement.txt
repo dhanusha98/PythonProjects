@@ -1,0 +1,93 @@
+class Human:
+      def __init__(self, firstName, lastName, age):
+         self.firstName=firstName
+         self.lastName=lastName
+         self.age=age
+        
+      def calculateAgeCategory(self):
+          ageCategory=""
+          
+          if self.age >=50:
+             ageCategory="Baby Boomers"
+          elif self.age >=35:
+             ageCategory="Generation X"
+          elif self.age >=18:
+             ageCategory="Millennials"
+          elif self.age >=12:
+             ageCategory="Teenagers"
+          else:
+             ageCategory="Child"
+              
+          return ageCategory
+        
+      def getInfo(self):
+          return "FULL NAME: " +str(self.firstName) + "\t"+ str(self.lastName) +"\nAGE: "+str(self.age)
+      
+class Student(Human):
+     def __init__(self, firstName, lastName, age, studentID, course, gpa):
+        Human.__init__(self, firstName, lastName, age)
+        self.studentID=studentID
+        self.course=course
+        self.gpa=gpa
+        
+     def calculateScholarshipEligibility(self):
+        scholarshipDetails=""
+        
+        if self.gpa >= 4.0:
+          scholarshipDetails="Fully Funded Scholarship"
+        elif self.gpa >=3.7:
+          scholarshipDetails="75% Scholarship"
+        elif self.gpa >=3.3:
+          scholarshipDetails="40% Scholarship"
+        elif self.gpa >=3.0:
+          scholarshipDetails="15% Scholarship"
+        return scholarshipDetails
+        
+     def getInfo(self):
+          return "STUDENT ID: "+str(self.studentID)+"\nFULL NAME: " + str(self.firstName) + "\t"+ str(self.lastName) + "\nAGE: "+str(self.age) + "\nCOURSE: " + str(self.course) + "\nGPA: " + str(self.gpa)
+        
+class Engineer(Human):
+     def __init__(self, firstName, lastName, age, employeeID, designation, project, department):
+        Human.__init__(self, firstName, lastName, age)
+        self.employeeID=employeeID
+        self.designation=designation
+        self.project=project
+        self.department=department
+    
+     def getBonusDetails(self):
+        designation=self.designation.replace(" ", "-")
+        bonusDetails=""
+        if designation.upper() == "TECH-LEAD":
+          bonusDetails="50% BONUS ALLOCATED"
+        elif designation.upper() =="ASSOCIATE-TECH-LEAD":
+          bonusDetails="25% BONUS ALLOCATED"
+        elif designation.upper() =="SENIOR-SOFTWARE-ENGINEER":
+          bonusDetails="12% BONUS ALLOCATED"
+        elif designation.upper() =="SOFTWARE-ENGINEER":
+          bonusDetails="8% BONUS ALLOCATED"
+        elif designation.upper() =="ASSOCIATE-ENGINEER":
+          bonusDetails="5% BONUS ALLOCATED"
+        else:
+          bonuesDetails="NO BONUS ALLOCATED"
+        
+        return bonusDetails
+    
+     def getInfo(self):
+          return "EMPLOYEE ID: "+str(self.employeeID)+"\nFULL NAME: " + str(self.firstName) + "\t"+ str(self.lastName) + "\nAGE: "+str(self.age) + "\nDESIGNATION: " + str(self.designation) + "\nPROJECT: " + str(self.project) + "\nDEPARTMENT: " + str(self.department)
+          
+human01=Human("Dhanusha", "Siriwardane", 19)
+student01=Student("Dhanusha", "Siriwardane", 19, "KS2088909", "BSc Hons Software Engineering", 3.6)
+employee01=Engineer("Dhanusha", "Siriwardane", 19, "1890987890X", "TECH LEAD", "PYTHON PROJECT", "IT")
+
+#METHODS TO ACCESS PROFILE DETAILS
+print(human01.getInfo())
+print(student01.getInfo())
+print(employee01.getInfo())
+
+#METHOD TO GET SCHOLARSHIP ELIGIBILIY 
+print(student01.calculateScholarshipEligibility())
+
+#METHOD TO GET BONUS DETAILS
+print(employee01.getBonusDetails())
+
+          

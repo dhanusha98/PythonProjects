@@ -1,0 +1,48 @@
+class Calculator:
+     def __init__(self):
+         print("DPS CALCULATOR")
+     def addition(self, num1, num2):
+         return num1 + num2
+     def subtraction(self, num1, num2):
+         return num1 - num2
+     def multification(self, num1, num2):
+         return num1 * num2
+     def division(self, num1, num2):
+         return num1 / num2
+     def modulus(self, num1, num2):
+         return num1 % num2
+         
+calculator01=Calculator()
+
+num1=float(input("ENTER NUM1: "))
+num2=float(input("ENTER NUM2: "))
+
+print("PRESS THE SYMBOL IN FOLLOWING LIST")
+
+print("\' + \' FOR ADDITION")
+print("\' - \'FOR SUBTRACTION")
+print("\' * \'FOR MULTIFICATION")
+print("\' /\' FOR DIVISION")
+print("\' %\' FOR MODULUS")
+
+calculatorOperation=input("PRESS THE OPERATION SYMBOL ABOVE TO IMPLEMENT CORRESPONDING SERVICE: ")
+
+if str(num1) == "" or str(num2) == "":
+   print("MANDATORY FIELDS ARE EMPTY !")
+else:
+    if calculatorOperation == "+":
+       result=calculator01.addition(num1, num2)
+       print("ADDITION: "+str(result))  
+    elif calculatorOperation == "-":
+       result=calculator01.subtraction(num1, num2)
+       print("SUBTRACTION: "+str(result))
+    elif calculatorOperation =="*":
+       result=calculator01.multification(num1, num2)
+       print("MULTIFICATION: "+str(result))
+    elif calculatorOperation =="/":
+       result=calculator01.division(num1, num2)
+       print("DIVISION: "+str(result))
+    elif calculatorOperation =="%":
+       result=calculator01.modulus(num1, num2)
+       print("MODULUS: "+str(result))
+            

@@ -1,0 +1,51 @@
+class Animal:
+      def __init__(self, animalName, animalType, height, weight):
+          self.animalName=animalName
+          self.animalType=animalType
+          self.height=height
+          self.weight=weight
+          
+      def action(self):
+          print("Animal Eats")
+          print("Other Animal Actions depends on Animal to Animal")
+          
+      def getAnimalName(self):
+          return self.animalName
+          
+      def setAnimalName(self, animalName):
+          self.animalName=animalName
+          
+      def getAnimalType(self):
+          return self.animalType
+          
+      def setAnimalType(self, animalType):
+          self.animalType=animalType
+          
+      def getHeight(self):
+          return self.height
+          
+      def setHeight(self, height):
+          self.height=height
+          
+      def getWeight(self):
+          return self.weight
+          
+      def setWeight(self):
+          self.weight=weight
+          
+      def displayInfo(self):
+          print("\nAnimal Name: "+str(self.animalName)+"\nAnimal Type: "+str(self.animalType)+"\nHeight: "+str(self.height)+"\nWeight: "+str(self.weight))
+          
+class Bird(Animal):
+      def __init__(self, animalName, animalType, height, weight):
+          Animal.__init__(self,animalName, animalType, height, weight)
+          
+      def displayInfo(self):
+          print("\nBird Name: "+str(self.animalName)+"\nBird Type: "+str(self.animalType)+"\nHeight: "+str(self.height)+"\nWeight: "+str(self.weight))
+          
+animal01=Animal("Animal01", "COMMON TYPE", 3.0, 12)
+bird01=Bird("Parrot", "Parrot Birds", 0.5, 1.0)
+
+animal01.displayInfo()
+bird01.displayInfo()
+          

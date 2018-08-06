@@ -1,0 +1,47 @@
+#BMI CALCULATOR
+
+def bmiScoreCalculator(height, weight):
+    bmiScore= (weight / height) / height
+    return bmiScore
+    
+def bmiCategoryCalculator(bmiScore):
+    bmiCategory=""
+    if bmiScore >=30:
+       bmiCategory = "Obesity" 
+    elif bmiScore >=25:
+       bmiCategory = "Overweight"
+    elif bmiScore >=18.5:
+       bmiCategory = "Standard-Weight"
+    else:
+        bmiCategory = "Underweight"
+    return bmiCategory
+    
+def getBMIRecommendation(bmiCategory):
+    bmiRecommendation=""
+    if bmiCategory.lower() == "Obesity":
+       bmiRecommendation = "High Requirement of Weight Reduction \n" \
+                           "Low Oily Foods and Daily 30 - 60 Minutes Exercise Recommended"
+    elif bmiCategory.lower() =="Overweight":
+       bmiRecommendation = "Weight Reduction Necessary \n" \
+                           "Daily 30 - 60 Minutes Exercise Recommended"
+    elif bmiCategory.lower() =="Standard-Weight":
+        bmiRecommendation = "Keep Maintain Healthy Weight \n" \
+                            "Daily 30 Minutes Exercise Recommended to Maintain Healthy Weight"
+    else:
+        bmiRecommendation = "Increment Weight to be fallen under Standard Weight Category \n" \
+                            "Protein Foods, Daily 30 - 60 Minutes Exercise Recommended"
+    return bmiRecommendation
+                     
+print("================================================ BMI CALCULATOR ================================================")
+
+name=input("Enter your Name: ")
+height=float(input("Enter your Height (Metres Only): "))
+weight=float(input("Enter your Weight (Kg Only): "))
+
+bmiScore = bmiScoreCalculator(height, weight)
+bmiCategory = bmiCategoryCalculator(bmiScore)
+bmiRecommendation = getBMIRecommendation(bmiCategory)
+
+print("BMI SCORE: "+str(bmiScore))
+print("BMI CATEGORY: "+str(bmiCategory))
+print("BMI RECOMMENDATION: "+str(bmiRecommendation))        

@@ -1,0 +1,8 @@
+#GUESSING GAME
+
+name=input("Enter the name of Farmer: ")
+duration=input("Enter the Duration (ex. 17 Years): ")
+searchItem=input("Enter the name of Search Item: ")
+
+story="British farmer "+ name+ "has spent the past "+ duration+" years searching for" + searchItem
+print(story)

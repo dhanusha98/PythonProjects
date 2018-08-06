@@ -1,0 +1,25 @@
+import math
+
+#MATH OPERATIONS
+
+print("FLOOR: "+str(math.floor(10.6)))
+print("CEIL: "+str(math.ceil(10.6)))
+print("SQUARE ROOT: "+str(math.sqrt(25)))
+print("POWER: "+str(math.pow(5,2)))
+print("EXPONENT: "+str(math.exp(2)))
+print("FACTORIAL: "+str(math.factorial(5)))
+
+#CIRCUMFERENCE AND AREA CALCULATOR OF A CIRCLE
+print("CIRCUMFERENCE AND AREA CALCULATOR OF A CIRCLE FROM GIVEN INPUTS")
+
+radius=float(input("ENTER RADIUS: "))
+
+#CIRCUMFERENCE CALCULATOR
+
+area = math.pi * (radius * radius)
+print("AREA: "+str(area))
+
+#AREA CALCULATOR
+
+circumerence = 2 * math.pi * radius 
+print("CIRCUMFERENCE: "+str(circumerence))
